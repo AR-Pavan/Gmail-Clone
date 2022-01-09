@@ -71,6 +71,7 @@ sendBt.addEventListener("click", async function sendMessage(e) {
         to: toMail.value,
         subject: sub.value,
         message: msg.value,
+
         sentEmail: sent,
     };
     let result = await fetch(

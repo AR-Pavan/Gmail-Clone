@@ -1,0 +1,212 @@
+body {
+    background-image: url(background.png);
+    background-position: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header {
+    background-color: rgba(248, 247, 246, 1);
+    padding: 1.5rem;
+    color: black;
+    font-weight: bold;
+    top: 0;
+    display: flex;
+}
+
+.login-logo {
+    margin: 1.5rem;
+    position: relative;
+    top: -5vh;
+    width: 200px;
+    height: 200px;
+}
+
+.body {
+    position: relative;
+    overflow: hidden;
+}
+
+.side-bar {
+    position: relative;
+    height: 100%;
+    width: 30vw;
+    object-fit: cover;
+    opacity: 0.8;
+    background-color: rgb(136, 90, 90);
+    transition: 0.5s;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bar ul {
+    padding: 1rem;
+    height: 100vh;
+    color: white;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.side-bar ul li {
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+
+.side-bar ul li button {
+    position: relative;
+    display: block;
+    width: 100%;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+
+.side-bar ul li button:active {
+    border: none;
+}
+
+.side-bar ul li:hover {
+    background-color: rgb(163, 50, 50);
+}
+
+.side-bar ul li button .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+.side-bar ul li button .icon .fa {
+    color: white;
+    font-size: 30px;
+}
+
+.search {
+    position: relative;
+    left: 20vw;
+    width: 30vw;
+    margin: 0 10px;
+}
+
+.search label {
+    position: relative;
+    width: 100%;
+}
+
+.search label input {
+    width: 100%;
+    height: 2vw;
+    border-radius: 5px;
+    padding: 5px 20px;
+    outline: none;
+    border: 1px solid black;
+    background-color: rgba(150, 111, 93, 0.562);
+}
+
+.user button {
+    position: relative;
+    right: -53vw;
+    top: -1vh;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: rgba(173, 87, 46, 0.562);
+    border-radius: 50%;
+}
+
+#app-body {
+    background: rgba(153, 121, 90, 0.5);
+    padding: 0.5rem 0;
+    width: 100%;
+    position: absolute;
+    left: 16.1%;
+    top: -0%;
+}
+
+.display-box {
+    color: black;
+    background: rgb(155, 129, 103);
+    padding: 0.5rem;
+    margin: 0.4rem 0;
+    width: 100%;
+}
+
+.compose-email {
+    display: none;
+    position: absolute;
+    background: rgb(223, 209, 209);
+    bottom: 0px;
+    right: 2rem;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 5px;
+}
+
+.emailhead {
+    display: flex;
+    gap: 15rem;
+    width: 100%;
+    background: rgb(145, 91, 91);
+    color: white;
+    padding: 0.4rem;
+}
+
+.recepient input,
+.subject input {
+    width: 97%;
+    margin: 0.4rem;
+    border: none;
+    border-bottom: 1px solid rgb(216, 214, 214);
+}
+
+.email-body {
+    height: max-content;
+}
+
+#emailBody {
+    position: relative;
+    width: 97%;
+    margin: 0.4rem;
+    border: none;
+}
+
+.sendBtnDiv {
+    position: absolute;
+    bottom: 0rem;
+    left: 0.4rem;
+}
+
+.login-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    overflow: hidden;
+}
+
+.form-adjust {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    top: 30%;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+#spinner {
+    position: absolute;
+    z-index: 100;
+    background: rgb(143, 141, 141);
+    width: 5rem;
+    height: 5rem;
+    display: none;
+}
